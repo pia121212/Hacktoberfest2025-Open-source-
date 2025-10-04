@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main() {
+    srand(time(0));
+    int n = rand()%5+1, g;
+    printf("Guess (1-5): ");
+    scanf("%d",&g);
+    printf(g==n ? "You Win!" : "You Lose!");
+}
